@@ -1,4 +1,6 @@
-package com.chicken.singleton;
+package com.chicken.singleton.main;
+
+import com.chicken.singleton.SingletonDemo3;
 
 import java.lang.reflect.Constructor;
 

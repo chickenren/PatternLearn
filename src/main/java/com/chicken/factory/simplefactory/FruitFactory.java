@@ -9,14 +9,15 @@ package com.chicken.factory.simplefactory;
  */
 public class FruitFactory {
 
-    public static IFruit getFruitByType(Class<? extends IFruit> cls) {
-        IFruit iFruit = null;
-        try {
-            iFruit = cls.getDeclaredConstructor().newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
+    public static IFruit getFruitByType(String type) {
+        IFruit fruit = null;
+        if("apple".equals(type)){
+            fruit = new Apple();
+        }else if("banana".equals(type)){
+            fruit = new Banana();
+        }else if("orange".equals(type)){
+            fruit = new Banana();
         }
-        return iFruit;
-
+        return fruit;
     }
 }

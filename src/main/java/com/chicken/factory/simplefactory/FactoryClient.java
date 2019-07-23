@@ -8,7 +8,8 @@ package com.chicken.factory.simplefactory;
  */
 public class FactoryClient {
     public static void main(String[] args) {
-        IFruit apple = FruitFactory.getFruitByType(Apple.class);
+        String fruitType = "banana";
+        IFruit apple = FruitFactory.getFruitByType(fruitType);
         apple.message();
     }
 }

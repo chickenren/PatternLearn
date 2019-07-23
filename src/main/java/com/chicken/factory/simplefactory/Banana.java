@@ -6,6 +6,7 @@ package com.chicken.factory.simplefactory;
  * @since 2018/9/18
  */
 public class Banana implements IFruit {
+    @Override
     public void message() {
         System.out.println("大家好，我是香蕉");
     }
